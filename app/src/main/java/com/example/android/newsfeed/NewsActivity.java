@@ -119,9 +119,9 @@ public class NewsActivity extends AppCompatActivity implements LoaderManager.Loa
                 new HashSet<>(Collections.singletonList(Constants.WORLD)));
 
         StringBuilder formattedSectionCategory = new StringBuilder();
-            //Go throw all the elements and after each other with a or | between
-            for (String key : sectionCategory) {
-                formattedSectionCategory.append(key).append("|");
+        //Go throw all the elements and after each other with a or | between
+        for (String key : sectionCategory) {
+            formattedSectionCategory.append(key).append("|");
         }
         //Delete the last character which is a or '|'
         formattedSectionCategory.setLength(formattedSectionCategory.length() - 1);
@@ -198,7 +198,6 @@ public class NewsActivity extends AppCompatActivity implements LoaderManager.Loa
     @Override
     public void sharingWebsiteOnClickListener(int position) {
         String website = newsAdapter.getItemPosition(position).getWebUrl();
-
         Intent shareIntent = new Intent(Intent.ACTION_SEND);
         shareIntent.setType(getString(R.string.string_type));
         shareIntent.putExtra(Intent.EXTRA_TEXT, website);
@@ -210,8 +209,9 @@ public class NewsActivity extends AppCompatActivity implements LoaderManager.Loa
                 PackageManager.MATCH_DEFAULT_ONLY);
 
         if (activities.size() > 0) {
-            startActivity(Intent.createChooser(shareIntent,getString(R.string.share)));
+            startActivity(Intent.createChooser(shareIntent, getString(R.string.share)));
         }
+
     }
 
     @Override

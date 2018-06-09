@@ -128,6 +128,68 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.MyViewHolder> 
         return colorList.get(new Random().nextInt(colorList.size()));
     }
 
+ /*   private int getColor() {
+        int categoryColorResourceId = 0;
+        int[] categoryValuesFromResources = context.getResources().getIntArray(R.array.rainbow);
+        List<Integer> colorList = new ArrayList<>();
+        for (int colorId : categoryValuesFromResources) {
+            colorList.add(colorId);
+        }
+        int index = Arrays.asList(categoryValuesFromResources).indexOf(categoryColorResourceId);
+
+        int element=0;
+        int size = colorList.size();
+        for(int i = 0; i <size; i++) {
+
+            element = colorList.get(i);
+        }
+
+        switch (element) {
+            case 0:
+                categoryColorResourceId = R.color.bright_pink;
+                break;
+            case 1:
+                categoryColorResourceId = R.color.red;
+                break;
+            case 2:
+                categoryColorResourceId = R.color.orange;
+                break;
+            case 3:
+                categoryColorResourceId = R.color.yellow;
+                break;
+            case 4:
+                categoryColorResourceId = R.color.chartreuse;
+                break;
+            case 5:
+                categoryColorResourceId = R.color.green;
+                break;
+            case 6:
+                categoryColorResourceId = R.color.spring_green;
+                break;
+            case 7:
+                categoryColorResourceId = R.color.cyan;
+                break;
+            case 8:
+                categoryColorResourceId = R.color.azure;
+                break;
+            case 9:
+                categoryColorResourceId = R.color.blue;
+                break;
+            case 10:
+                categoryColorResourceId = R.color.violet;
+                break;
+            case 11:
+                categoryColorResourceId = R.color.magenta;
+                break;
+            default:
+                categoryColorResourceId = R.color.violet;
+                break;
+        }
+
+        return ContextCompat.getColor(context, categoryColorResourceId);
+    }*/
+
+
     static class MyViewHolder extends RecyclerView.ViewHolder {
         @BindView(R.id.news_card_view)
         CardView cardView;
