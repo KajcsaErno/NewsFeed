@@ -1,0 +1,163 @@
+<resources>
+    <string name="app_name">News Feed</string>
+    <string name="title_activity_news">NewsActivity</string>
+    <string name="no_news">Server is down check back later!</string>
+    <string name="no_internet">Unable to connect to the Internet. Please check your network settings and try again.</string>
+    <string name="anonymous">Anonymous</string>
+    <string name="settings_menu_item">Settings</string>
+    <string name="settings_title">News Feed Settings</string>
+
+    <!-- Label for Page Size option [CHAR LIMIT=20] -->
+    <string name="settings_page_size_label">List size to be shown</string>
+    <string name="settings_page_size_key" translatable="false">pg_size</string>
+    <string name="settings_page_size_default" translatable="false">15</string>
+
+    <!-- Label for Search option [CHAR LIMIT=20] -->
+    <string name="settings_search_label">Search news</string>
+    <string name="settings_search_key" translatable="false">search</string>
+    <string name="settings_search_default" translatable="false"></string>
+
+    <!-- Label for Search option [CHAR LIMIT=20] -->
+    <string name="settings_from_date_label">Return news after a given date</string>
+    <string name="settings_from_date_key" translatable="false">from_date</string>
+    <string name="settings_from_date_default" translatable="false">2018-01-01</string>
+
+    <!-- Strings For Order-By Preference [CHAR LIMIT=30] -->
+    <string name="settings_order_by_label">Order by</string>
+    <string name="settings_order_by_key" translatable="false">order_by</string>
+    <string name="settings_order_by_default" translatable="false">@string/settings_order_by_newest_value</string>
+
+    <!-- Label for order-by Newest option [CHAR LIMIT=20] -->
+    <string name="settings_order_by_newest_label">Newest</string>
+    <string name="settings_order_by_newest_value" translatable="false">newest</string>
+
+    <!-- Label for order-by Oldest option [CHAR LIMIT=20] -->
+    <string name="settings_order_by_oldest_label">Oldest</string>
+    <string name="settings_order_by_oldest_value" translatable="false">oldest</string>
+
+    <!-- Label for order-by Relevance option [CHAR LIMIT=20] -->
+    <string name="settings_order_by_relevance_label">Relevance</string>
+    <string name="settings_order_by_relevance_value" translatable="false">relevance</string>
+
+
+    <!-- Strings For News Category Preference [CHAR LIMIT=30] -->
+    <string name="settings_category_label">Select categories</string>
+    <string name="settings_category_key" translatable="false">category</string>
+    <string name="settings_category_default" translatable="false">@string/settings_category_world_news_value</string>
+
+    <!-- Label for News option [CHAR LIMIT=20] -->
+    <string name="settings_category_news_label">News</string>
+    <string name="settings_category_news_value" translatable="false">news</string>
+
+    <!-- Label for World News option [CHAR LIMIT=20] -->
+    <string name="settings_category_world_news_label">World News</string>
+    <string name="settings_category_world_news_value" translatable="false">world</string>
+
+    <!-- Label for UK News option [CHAR LIMIT=20] -->
+    <string name="settings_category_uk_news_label">UK News</string>
+    <string name="settings_category_uk_news_value" translatable="false">uk-news</string>
+
+    <!-- Label for Cities option [CHAR LIMIT=20] -->
+    <string name="settings_category_cities_label">Cities</string>
+    <string name="settings_category_cities_value" translatable="false">cities</string>
+
+    <!-- Label for Cities option [CHAR LIMIT=20] -->
+    <string name="settings_category_global_development_label">Global Development</string>
+    <string name="settings_category_global_development_value" translatable="false">global-development</string>
+
+    <!-- Label for Technology option [CHAR LIMIT=20] -->
+    <string name="settings_category_technology_label">Technology</string>
+    <string name="settings_category_technology_value" translatable="false">technology</string>
+
+    <!-- Label for Business option [CHAR LIMIT=20] -->
+    <string name="settings_category_business_label">Business</string>
+    <string name="settings_category_business_value" translatable="false">business</string>
+
+    <!-- Label for Environment option [CHAR LIMIT=20] -->
+    <string name="settings_category_environment_label">Environment</string>
+    <string name="settings_category_environment_value" translatable="false">environment</string>
+
+    <!-- Label for Education option [CHAR LIMIT=20] -->
+    <string name="settings_category_education_label">Education</string>
+    <string name="settings_category_education_value" translatable="false">education</string>
+
+    <!-- Label for Society option [CHAR LIMIT=20] -->
+    <string name="settings_category_society_label">Society</string>
+    <string name="settings_category_society_value" translatable="false">society</string>
+
+    <!-- Label for Science option [CHAR LIMIT=20] -->
+    <string name="settings_category_science_label">Science</string>
+    <string name="settings_category_science_value" translatable="false">science</string>
+
+    <!-- Label for Opinion option [CHAR LIMIT=20] -->
+    <string name="settings_category_opinion_label">Opinion</string>
+    <string name="settings_category_opinion_value" translatable="false">commentisfree</string>
+
+    <!-- Label for Sport option [CHAR LIMIT=20] -->
+    <string name="settings_category_sport_label">Sport</string>
+    <string name="settings_category_sport_value" translatable="false">sport</string>
+
+    <!-- Label for Football option [CHAR LIMIT=20] -->
+    <string name="settings_category_football_label">Football</string>
+    <string name="settings_category_football_value" translatable="false">football</string>
+
+    <!-- Label for Culture option [CHAR LIMIT=20] -->
+    <string name="settings_category_culture_label">Culture</string>
+    <string name="settings_category_culture_value" translatable="false">culture</string>
+
+    <!-- Label for Books option [CHAR LIMIT=20] -->
+    <string name="settings_category_books_label">Books</string>
+    <string name="settings_category_books_value" translatable="false">books</string>
+
+    <!-- Label for Music option [CHAR LIMIT=20] -->
+    <string name="settings_category_music_label">Music</string>
+    <string name="settings_category_music_value" translatable="false">music</string>
+
+    <!-- Label for TV and Radio option [CHAR LIMIT=20] -->
+    <string name="settings_category_tv_and_radio_label">TV and Radio</string>
+    <string name="settings_category_tv_and_radio_value" translatable="false">tv-and-radio</string>
+
+    <!-- Label for Art and Design option [CHAR LIMIT=20] -->
+    <string name="settings_category_art_and_design_label">Art and Design</string>
+    <string name="settings_category_art_and_design_value" translatable="false">artanddesign</string>
+
+    <!-- Label for Movies option [CHAR LIMIT=20] -->
+    <string name="settings_category_film_label">Films</string>
+    <string name="settings_category_film_value" translatable="false">film</string>
+
+    <!-- Label for Games option [CHAR LIMIT=20] -->
+    <string name="settings_category_games_label">Games</string>
+    <string name="settings_category_games_value" translatable="false">games</string>
+
+    <!-- Label for Stage option [CHAR LIMIT=20] -->
+    <string name="settings_category_stage_label">Stage</string>
+    <string name="settings_category_stage_value" translatable="false">stage</string>
+
+    <!-- Label for Life and style option [CHAR LIMIT=20] -->
+    <string name="settings_category_life_and_style_label">Life and style</string>
+    <string name="settings_category_life_and_style_value" translatable="false">lifeandstyle</string>
+
+    <!-- Label for Fashion option [CHAR LIMIT=20] -->
+    <string name="settings_category_fashion_label">Fashion</string>
+    <string name="settings_category_fashion_value" translatable="false">fashion</string>
+
+    <!-- Label for Travel option [CHAR LIMIT=20] -->
+    <string name="settings_category_travel_label">Travel</string>
+    <string name="settings_category_travel_value" translatable="false">travel</string>
+
+    <!-- Label for Money option [CHAR LIMIT=20] -->
+    <string name="settings_category_money_label">Money</string>
+    <string name="settings_category_money_value" translatable="false">money</string>
+
+    <string name="no_date">There is no date.</string>
+    <string name="no_internet_image_view_description">No internet ImageView</string>
+    <string name="a_thumbnail_from_the_current_news">A thumbnail from the current news</string>
+    <string name="opening_website">Opening guardian website for more information.</string>
+    <string name="menu_refresh">Refresh the news</string>
+    <string name="pref_cat_news_option_label">NEWS OPTIONS</string>
+    <string name="pref_cat_visual_option_label">VISUAL OPTIONS</string>
+    <string name="intresting_news">Check out this interesting news!</string>
+    <string name="string_type">text/plain</string>
+    <string name="share">Share</string>
+
+</resources>

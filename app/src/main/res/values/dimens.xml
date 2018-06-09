@@ -1,0 +1,13 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="relative_layout_padding">8dp</dimen>
+    <dimen name="no_internet_text_view_padding">12dp</dimen>
+    <dimen name="card_view_corner_radius">0dp</dimen>
+    <dimen name="card_view_elevation">3dp</dimen>
+    <dimen name="card_view_margin">5dp</dimen>
+    <dimen name="ten">10dp</dimen>
+    <dimen name="news_title_text_size">22sp</dimen>
+    <dimen name="news_category_text_size">12sp</dimen>
+    <dimen name="bottom_text_views_text_size">15sp</dimen>
+    <dimen name="news_category_margin">5dp</dimen>
+</resources>

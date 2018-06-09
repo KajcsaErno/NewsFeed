@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="settings_order_by_labels">
+        <item>@string/settings_order_by_newest_label</item>
+        <item>@string/settings_order_by_oldest_label</item>
+        <item>@string/settings_order_by_relevance_label</item>
+    </string-array>
+
+    <string-array name="settings_order_by_values">
+        <item>@string/settings_order_by_newest_value</item>
+        <item>@string/settings_order_by_oldest_value</item>
+        <item>@string/settings_order_by_relevance_value</item>
+    </string-array>
+
+    <string-array name="empty_array" />
+
+    <string-array name="settings_category_labels">
+        <item>@string/settings_category_news_label</item>
+        <item>@string/settings_category_world_news_label</item>
+        <item>@string/settings_category_uk_news_label</item>
+        <item>@string/settings_category_cities_label</item>
+        <item>@string/settings_category_global_development_label</item>
+        <item>@string/settings_category_technology_label</item>
+        <item>@string/settings_category_business_label</item>
+        <item>@string/settings_category_environment_label</item>
+        <item>@string/settings_category_education_label</item>
+        <item>@string/settings_category_society_label</item>
+        <item>@string/settings_category_science_label</item>
+        <item>@string/settings_category_opinion_label</item>
+        <item>@string/settings_category_sport_label</item>
+        <item>@string/settings_category_football_label</item>
+        <item>@string/settings_category_culture_label</item>
+        <item>@string/settings_category_books_label</item>
+        <item>@string/settings_category_music_label</item>
+        <item>@string/settings_category_tv_and_radio_label</item>
+        <item>@string/settings_category_art_and_design_label</item>
+        <item>@string/settings_category_film_label</item>
+        <item>@string/settings_category_games_label</item>
+        <item>@string/settings_category_stage_label</item>
+        <item>@string/settings_category_life_and_style_label</item>
+        <item>@string/settings_category_fashion_label</item>
+        <item>@string/settings_category_travel_label</item>
+        <item>@string/settings_category_money_label</item>
+    </string-array>
+
+    <string-array name="settings_category_values">
+        <item>@string/settings_category_news_value</item>
+        <item>@string/settings_category_world_news_value</item>
+        <item>@string/settings_category_uk_news_value</item>
+        <item>@string/settings_category_cities_value</item>
+        <item>@string/settings_category_global_development_value</item>
+        <item>@string/settings_category_technology_value</item>
+        <item>@string/settings_category_business_value</item>
+        <item>@string/settings_category_environment_value</item>
+        <item>@string/settings_category_education_value</item>
+        <item>@string/settings_category_society_value</item>
+        <item>@string/settings_category_science_value</item>
+        <item>@string/settings_category_opinion_value</item>
+        <item>@string/settings_category_sport_value</item>
+        <item>@string/settings_category_football_value</item>
+        <item>@string/settings_category_culture_value</item>
+        <item>@string/settings_category_books_value</item>
+        <item>@string/settings_category_music_value</item>
+        <item>@string/settings_category_tv_and_radio_value</item>
+        <item>@string/settings_category_art_and_design_value</item>
+        <item>@string/settings_category_film_value</item>
+        <item>@string/settings_category_games_value</item>
+        <item>@string/settings_category_stage_value</item>
+        <item>@string/settings_category_life_and_style_value</item>
+        <item>@string/settings_category_fashion_value</item>
+        <item>@string/settings_category_travel_value</item>
+        <item>@string/settings_category_money_value</item>
+    </string-array>
+
+    <integer-array name="rainbow">
+        <item>@color/bright_pink</item>
+        <item>@color/red</item>
+        <item>@color/orange</item>
+        <item>@color/yellow</item>
+        <item>@color/chartreuse</item>
+        <item>@color/green</item>
+        <item>@color/spring_green</item>
+        <item>@color/cyan</item>
+        <item>@color/azure</item>
+        <item>@color/blue</item>
+        <item>@color/violet</item>
+        <item>@color/magenta</item>
+    </integer-array>
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/news_card_view"
+        style="@style/card_view_style"
+        cardview:cardCornerRadius="@dimen/card_view_corner_radius">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/news_title_text_view"
+                style="@style/news_title_text_view_style"
+                tools:text="News Title" />
+
+            <ImageView
+                android:id="@+id/news_thumbnail_image_view"
+                style="@style/thumbnail_image_view_style"
+                android:contentDescription="@string/a_thumbnail_from_the_current_news" />
+
+            <TextView
+                android:id="@+id/news_category_text_view"
+                style="@style/news_category_text_view_style"
+                tools:text="Category Placeholder" />
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/news_title_text_view"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/share_image_view"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_action_share" />
+
+                <ImageView
+                    android:id="@+id/open_web_page_image_view"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_open_in_new" />
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/author_date_linear_layout_style">
+
+                <TextView
+                    android:id="@+id/author_name_text_view"
+                    style="@style/author_name_text_view_style"
+                    tools:text="John Doe" />
+
+                <TextView
+                    android:id="@+id/publication_date_text_view"
+                    style="@style/publication_date_text_view_style"
+                    tools:text="2018-05-10 16:09:05" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>

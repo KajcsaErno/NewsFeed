@@ -1,0 +1,138 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="match_parent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="wrap_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="no_internet_image_view" parent="wrap_content">
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+
+    <style name="no_internet_text_view" parent="wrap_content">
+        <item name="android:layout_below">@+id/empty_image_view</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:padding">@dimen/no_internet_text_view_padding</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+    </style>
+
+    <style name="loading_spinner_progress_bar" parent="Widget.AppCompat.ProgressBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="card_view_style">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/card_view_margin</item>
+        <item name="android:elevation" tools:targetApi="lollipop">@dimen/card_view_elevation</item>
+    </style>
+
+    <style name="news_title_text_view_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentStart" tools:targetApi="jelly_bean_mr1">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:paddingBottom">@dimen/ten</item>
+        <item name="android:paddingTop">@dimen/ten</item>
+        <item name="android:textColor">@color/my_dark</item>
+        <item name="android:textSize">@dimen/news_title_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="thumbnail_image_view_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentStart" tools:targetApi="jelly_bean_mr1">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_below">@+id/news_category_text_view</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+
+    <style name="news_category_text_view_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@+id/news_title_text_view</item>
+        <item name="android:layout_alignParentStart" tools:targetApi="jelly_bean_mr1">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:background">@drawable/category_background</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:padding">@dimen/ten</item>
+        <item name="android:layout_margin">@dimen/news_category_margin</item>
+        <item name="android:textColor">@color/my_dark</item>
+        <item name="android:textSize">@dimen/news_category_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="author_name_text_view_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:fontFamily">sans-serif-smallcaps</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">@dimen/ten</item>
+        <item name="android:paddingBottom">@dimen/ten</item>
+        <item name="android:textColor">@color/my_white</item>
+        <item name="android:textSize">@dimen/bottom_text_views_text_size</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="publication_date_text_view_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:paddingTop">@dimen/ten</item>
+        <item name="android:paddingBottom">@dimen/ten</item>
+        <item name="android:textColor">@color/my_white</item>
+        <item name="android:textSize">@dimen/bottom_text_views_text_size</item>
+    </style>
+
+    <style name="author_date_linear_layout_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentStart" tools:targetApi="jelly_bean_mr1">true</item>
+        <item name="android:background">#80000000</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+</resources>
