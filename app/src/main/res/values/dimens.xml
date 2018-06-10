@@ -7,7 +7,9 @@
     <dimen name="card_view_margin">5dp</dimen>
     <dimen name="ten">10dp</dimen>
     <dimen name="news_title_text_size">22sp</dimen>
-    <dimen name="news_category_text_size">12sp</dimen>
+    <dimen name="news_category_text_size">15sp</dimen>
     <dimen name="bottom_text_views_text_size">15sp</dimen>
     <dimen name="news_category_margin">5dp</dimen>
+    <dimen name="share_open_icon_linear_layout_width">100dp</dimen>
+    <dimen name="share_open_icon_linear_layout_padding">5dp</dimen>
 </resources>

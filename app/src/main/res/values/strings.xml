@@ -156,8 +156,11 @@
     <string name="menu_refresh">Refresh the news</string>
     <string name="pref_cat_news_option_label">NEWS OPTIONS</string>
     <string name="pref_cat_visual_option_label">VISUAL OPTIONS</string>
-    <string name="intresting_news">Check out this interesting news!</string>
+    <string name="interesting_news">Check out this interesting news!</string>
     <string name="string_type">text/plain</string>
     <string name="share">Share</string>
+    <string name="a_share_button_to_share_current_news">A share button, to share current news</string>
+    <string name="open_in_browser_the_news">Open in browser the news</string>
+    <string name="select_at_least_one_category">Please select at least one category.</string>
 
 </resources>

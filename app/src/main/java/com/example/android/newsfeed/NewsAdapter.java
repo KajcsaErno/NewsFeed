@@ -1,10 +1,6 @@
 package com.example.android.newsfeed;
 
 import android.content.Context;
-import android.graphics.drawable.ColorDrawable;
-import android.graphics.drawable.Drawable;
-import android.graphics.drawable.GradientDrawable;
-import android.graphics.drawable.ShapeDrawable;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
@@ -16,9 +12,7 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -50,14 +44,9 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.MyViewHolder> 
         //Update the newsPosition title
         holder.webTitleTextView.setText(newsPosition.getWebTitle());
 
-        //Getting oval background otherwise the default is rectangular
-        Drawable drawable = holder.categoryTextView.getBackground();
-        if (drawable instanceof ShapeDrawable) {
-            ((ShapeDrawable)drawable).getPaint().setColor(getCategoryColor());
-        } else if (drawable instanceof GradientDrawable) {
-            ((GradientDrawable)drawable).setColor(getCategoryColor());
-        } else if (drawable instanceof ColorDrawable) {
-            ((ColorDrawable)drawable).setColor(getCategoryColor());
+        int categoryColor = getCategoryColor(newsPosition.getCategory());
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
+            holder.categoryTextView.setBackgroundTintList(context.getResources().getColorStateList(categoryColor));
         }
 
         //Update the categoryTextView
@@ -118,7 +107,7 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.MyViewHolder> 
         notifyDataSetChanged();
     }
 
-    private int getCategoryColor() {
+/*    private int getCategoryColor() {
         //make colors great again
         int[] colorsFromResources = context.getResources().getIntArray(R.array.rainbow);
         List<Integer> colorList = new ArrayList<>();
@@ -126,10 +115,96 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.MyViewHolder> 
             colorList.add(colorId);
         }
         return colorList.get(new Random().nextInt(colorList.size()));
+    }*/
+
+
+    private int getCategoryColor(String category) {
+        int categoryColor;
+        switch (category) {
+            case Constants.NEWS:
+                categoryColor = R.color.md_red_400;
+                break;
+            case Constants.WORLD_NEWS:
+                categoryColor = R.color.md_red_600;
+                break;
+            case Constants.UK_NEWS:
+                categoryColor = R.color.md_red_900;
+                break;
+            case Constants.CITIES:
+                categoryColor = R.color.md_deep_orange_600;
+                break;
+            case Constants.GLOBAL_DEVELOPMENT:
+                categoryColor = R.color.md_deep_orange_700;
+                break;
+            case Constants.TECHNOLOGY:
+                categoryColor = R.color.md_deep_orange_800;
+                break;
+            case Constants.BUSINESS:
+                categoryColor = R.color.md_indigo_600;
+                break;
+            case Constants.ENVIRONMENT:
+                categoryColor = R.color.md_teal_800;
+                break;
+            case Constants.EDUCATION:
+                categoryColor = R.color.md_cyan_500;
+                break;
+            case Constants.SOCIETY:
+                categoryColor = R.color.md_brown_500;
+                break;
+            case Constants.SCIENCE:
+                categoryColor = R.color.md_amber_700;
+                break;
+            case Constants.OPINION:
+                categoryColor = R.color.md_light_green_400;
+                break;
+            case Constants.SPORT:
+                categoryColor = R.color.md_blue_500;
+                break;
+            case Constants.FOOTBALL:
+                categoryColor = R.color.md_blue_700;
+                break;
+            case Constants.CULTURE:
+                categoryColor = R.color.md_cyan_800;
+                break;
+            case Constants.BOOKS:
+                categoryColor = R.color.md_purple_400;
+                break;
+            case Constants.MUSIC:
+                categoryColor = R.color.md_purple_500;
+                break;
+            case Constants.TV_AND_RADIO:
+                categoryColor = R.color.md_purple_600;
+                break;
+            case Constants.ART_AND_DESIGN:
+                categoryColor = R.color.md_purple_700;
+                break;
+            case Constants.FILMS:
+                categoryColor = R.color.md_green_400;
+                break;
+            case Constants.GAMES:
+                categoryColor = R.color.md_green_400;
+                break;
+            case Constants.STAGE:
+                categoryColor = R.color.md_deep_orange_400;
+                break;
+            case Constants.LIFE_AND_STYLE:
+                categoryColor = R.color.md_deep_orange_400;
+                break;
+            case Constants.FASHION:
+                categoryColor = R.color.md_deep_orange_500;
+                break;
+            case Constants.TRAVEL:
+                categoryColor = R.color.md_lime_500;
+                break;
+            case Constants.MONEY:
+                categoryColor = R.color.md_yellow_700;
+                break;
+            default:
+                categoryColor = R.color.md_red_A700;
+                break;
+        }
+        return categoryColor;
     }
-
-
-
 
     static class MyViewHolder extends RecyclerView.ViewHolder {
         @BindView(R.id.news_card_view)

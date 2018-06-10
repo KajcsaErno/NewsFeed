@@ -7,6 +7,7 @@
         android:defaultValue="@array/empty_array"
         android:entries="@array/settings_category_labels"
         android:entryValues="@array/settings_category_values"
+        android:summary="@string/select_at_least_one_category"
         android:key="@string/settings_category_key"
         android:title="@string/settings_category_label" />
 
@@ -14,6 +15,7 @@
         android:defaultValue="@string/settings_search_default"
         android:inputType="textAutoComplete"
         android:key="@string/settings_search_key"
+        android:summary="Use any keyword"
         android:selectAllOnFocus="true"
         android:title="@string/settings_search_label" />
 
@@ -23,7 +25,6 @@
         android:entryValues="@array/settings_order_by_values"
         android:key="@string/settings_order_by_key"
         android:title="@string/settings_order_by_label" />
-
 
     <com.example.android.newsfeed.DatePreference
         android:defaultValue="@string/settings_from_date_default"

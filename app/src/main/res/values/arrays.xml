@@ -71,19 +71,4 @@
         <item>@string/settings_category_travel_value</item>
         <item>@string/settings_category_money_value</item>
     </string-array>
-
-    <integer-array name="rainbow">
-        <item>@color/bright_pink</item>
-        <item>@color/red</item>
-        <item>@color/orange</item>
-        <item>@color/yellow</item>
-        <item>@color/chartreuse</item>
-        <item>@color/green</item>
-        <item>@color/spring_green</item>
-        <item>@color/cyan</item>
-        <item>@color/azure</item>
-        <item>@color/blue</item>
-        <item>@color/violet</item>
-        <item>@color/magenta</item>
-    </integer-array>
 </resources>

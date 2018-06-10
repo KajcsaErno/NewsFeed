@@ -1,5 +1,6 @@
 package com.example.android.newsfeed;
 
+import android.annotation.SuppressLint;
 import android.app.LoaderManager;
 import android.content.Context;
 import android.content.Intent;
@@ -14,6 +15,7 @@ import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.view.menu.MenuBuilder;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
@@ -60,7 +62,7 @@ public class NewsActivity extends AppCompatActivity implements LoaderManager.Loa
         emptyTextView.setVisibility(View.GONE);
 
         // Configure the refreshing color
-        swipeRefresher.setColorSchemeResources(android.R.color.holo_blue_bright);
+        swipeRefresher.setColorSchemeResources(R.color.md_green_800);
 
         myUpdateOperation();
 
@@ -116,17 +118,17 @@ public class NewsActivity extends AppCompatActivity implements LoaderManager.Loa
         Set<String> sectionCategory = sharedPreferences.getStringSet(
                 getString(R.string.settings_category_key),
                 //Default value, so when the user launches the app for first time it shows news
-                new HashSet<>(Collections.singletonList(Constants.WORLD)));
+                new HashSet<>(Collections.singletonList(Constants.WORLD_NEWS_DEFAULT_VALUE)));
 
         StringBuilder formattedSectionCategory = new StringBuilder();
         //Go throw all the elements and after each other with a or | between
         for (String key : sectionCategory) {
             formattedSectionCategory.append(key).append("|");
         }
-        //Delete the last character which is a or '|'
-        formattedSectionCategory.setLength(formattedSectionCategory.length() - 1);
-
-
+        if (formattedSectionCategory.length() != 0) {
+            //Delete the last character which is a or '|'
+            formattedSectionCategory.setLength(formattedSectionCategory.length() - 1);
+        }
         // parse breaks apart the URI string that's passed into its parameter
         Uri rootUri = Uri.parse(Constants.ROOT_URI);
 
@@ -201,7 +203,7 @@ public class NewsActivity extends AppCompatActivity implements LoaderManager.Loa
         Intent shareIntent = new Intent(Intent.ACTION_SEND);
         shareIntent.setType(getString(R.string.string_type));
         shareIntent.putExtra(Intent.EXTRA_TEXT, website);
-        shareIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, getString(R.string.intresting_news));
+        shareIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, getString(R.string.interesting_news));
 
         //Verify if there is any application which can send our link
         PackageManager packageManager = getPackageManager();
@@ -214,11 +216,18 @@ public class NewsActivity extends AppCompatActivity implements LoaderManager.Loa
 
     }
 
+    @SuppressLint("RestrictedApi")
     @Override
     // This method initialize the contents of the Activity's options menu.
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the Options Menu we specified in XML
         getMenuInflater().inflate(R.menu.main, menu);
+
+        if(menu instanceof MenuBuilder){
+            MenuBuilder menuBuilder = (MenuBuilder) menu;
+            menuBuilder.setOptionalIconsVisible(true);
+        }
+
         return true;
     }
 
