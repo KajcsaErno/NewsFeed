@@ -7,6 +7,7 @@ import android.preference.MultiSelectListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceFragment;
 import android.preference.PreferenceManager;
+import android.support.annotation.StringRes;
 import android.support.v7.app.AppCompatActivity;
 
 import java.util.HashSet;
@@ -27,7 +28,7 @@ public class SettingsActivity extends AppCompatActivity {
             addPreferencesFromResource(R.xml.settings_main);
 
             // Update to the current value for a user friendly UI
-            Preference sectionCategory = findPreference(getString(R.string.settings_category_key));
+       /*     Preference sectionCategory = findPreference(getString(R.string.settings_category_key));
             bindPreferenceSummaryToValue(sectionCategory);
 
             Preference orderBy = findPreference(getString(R.string.settings_order_by_key));
@@ -40,7 +41,24 @@ public class SettingsActivity extends AppCompatActivity {
             bindPreferenceSummaryToValue(search);
 
             Preference fromDate = findPreference(getString(R.string.settings_from_date_key));
-            bindPreferenceSummaryToValue(fromDate);
+            bindPreferenceSummaryToValue(fromDate);*/
+
+            findAndBindPreferences(R.string.settings_category_key,
+                    R.string.settings_order_by_key,
+                    R.string.settings_search_key,
+                    R.string.settings_search_key,
+                    R.string.settings_from_date_key);
+
+        }
+
+
+        private void findAndBindPreferences(@StringRes int... stringResources) {
+            for (int stringResource : stringResources) {
+                Preference preference = findPreference(getString(R.string.settings_from_date_key));
+                bindPreferenceSummaryToValue(preference);
+
+
+            }
         }
 
         @Override

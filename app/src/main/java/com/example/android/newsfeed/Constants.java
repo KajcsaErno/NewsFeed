@@ -1,6 +1,6 @@
 package com.example.android.newsfeed;
 
-public class Constants {
+public final class Constants {
 
     /**
      * Constant value for the news loader ID. We can choose any integer.

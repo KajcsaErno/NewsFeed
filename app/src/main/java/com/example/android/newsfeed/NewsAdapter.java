@@ -137,7 +137,7 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.MyViewHolder> 
                 categoryColor = R.color.md_deep_orange_700;
                 break;
             case Constants.TECHNOLOGY:
-                categoryColor = R.color.md_deep_orange_800;
+                categoryColor = R.color.md_deep_orange_900;
                 break;
             case Constants.BUSINESS:
                 categoryColor = R.color.md_indigo_600;
