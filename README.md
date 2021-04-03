@@ -20,7 +20,14 @@ This project is about combining various ideas and skills I’ve been practicing 
 * Update and display the Preference Summary
 
 ## Final result of my project - News Feed App
-Try it yourself: *[NewsFeed.apk]()*
+Try it yourself: *[NewsFeed.apk](https://www.mediafire.com/file/m0sfonpo6sy56o1/NewsFeed.apk/file)*
+
+![image](https://user-images.githubusercontent.com/31850356/113482848-bfe3fd00-94a0-11eb-80de-a0c383c04ef5.png)
+![image](https://user-images.githubusercontent.com/31850356/113482857-d1c5a000-94a0-11eb-889c-478590c24742.png)
+![image](https://user-images.githubusercontent.com/31850356/113482888-f7eb4000-94a0-11eb-834f-0db2224c166d.png)
+![image](https://user-images.githubusercontent.com/31850356/113482911-12bdb480-94a1-11eb-9b51-9d37a1fb30f1.png)
+![image](https://user-images.githubusercontent.com/31850356/113482968-4e587e80-94a1-11eb-8fd0-1dc20f92305f.png)
+
 
 
 
