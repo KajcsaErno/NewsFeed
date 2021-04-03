@@ -29,13 +29,13 @@
 
                 <ImageView
                     android:id="@+id/share_image_view"
-                    android:src="@drawable/ic_share_teal_500_24dp"
+                    android:src="@drawable/baseline_share_black_24"
                     style="@style/share_image_view_style"
                     android:contentDescription="@string/a_share_button_to_share_current_news" />
 
                 <ImageView
                     android:id="@+id/open_web_page_image_view"
-                    android:src="@drawable/ic_open_in_new_teal_500_24dp"
+                    android:src="@drawable/baseline_open_in_new_black_24"
                     style="@style/open_new_image_view_style"
                     android:contentDescription="@string/open_in_browser_the_news" />
             </LinearLayout>
